@@ -1,0 +1,22 @@
+nav {
+    background: #f0f0f0;
+    border-bottom: 1px solid #e6e5e6;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .brand, .navbar p {
+    margin-right: auto;
+}
+
+.navbar p {
+    font-size: 20px;
+    color: #027b51;
+    font-weight: bold;
+}
+
+.title-info {
+    color: #505456;
+}

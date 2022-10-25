@@ -1,0 +1,10 @@
+button {
+    background: #00418a;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+}
+
+.btn-success {
+    background: #007448;
+}

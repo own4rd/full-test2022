@@ -1,0 +1,26 @@
+
+label {
+    font-size: 0.8em;
+    color: #8e8e8e;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid #c3e7d9;
+}
+
+ul {
+    list-style: none;
+  }
+  .list {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+  }
+  .list-items {
+    padding: 10px 5px;
+  }
+  .list-items:hover {
+    background-color: #dddddd;
+  }

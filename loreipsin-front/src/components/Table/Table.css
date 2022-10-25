@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+    text-align: right;
+}
+
+table thead tr > :first-child, table tbody tr > :first-child{
+    text-align: left;
+}
+
+.fa-trash {
+    color: #a60003;
+    padding: 10px;
+}
+
+
+.fa-trash:hover {
+    background: #ffc1c0;
+    padding: 10px;
+    border-radius: 50px;
+
+}

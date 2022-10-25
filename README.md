@@ -30,7 +30,7 @@ Criar superuser para acessar http://localhost:8000/admin
 # API
 
 Api está documentada com Swagger podendo ser acessada pela url:
-http://localhost:8000/swagger/
+http://localhost:8000/doc/
 
 
 # Front

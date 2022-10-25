@@ -62,6 +62,13 @@ function App() {
     
   const onClickAddProduto = (e) => {
     e.preventDefault()
+    if(inputs.quantidade <= 0) {
+      setMessage({
+        'info': 'Quantidade de itens deve ser maior que 0',
+        'type': 'error'
+      })
+      return 
+    }
     setSelectedProdutos([...selectedProdutos, {
       'item': produto.id,
       'nome': produto.nome,
@@ -82,6 +89,14 @@ function App() {
 
   const onSubmitForm = async (e) => {
     e.preventDefault()
+    if(!inputs.vendedor || !inputs.cliente) {
+      setMessage({
+        'info': 'É necessário informar vendedor e cliente.',
+        'type': 'error'
+      })
+      return 
+
+    }
     let response = await salvarVenda(JSON.stringify({
       'itensvenda': selectedProdutos,
       'vendedor': inputs.vendedor,

@@ -1,4 +1,4 @@
-## DJANGO APP
+## AMCOM TEST FULLSTACK
 
 Projeto pode ser acessado em:
 

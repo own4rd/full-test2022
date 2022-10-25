@@ -4,7 +4,7 @@ Projeto pode ser acessado em:
 
 API: https://amcomtest2022.herokuapp.com/doc/
 
-ADMIN: https://amcomtest2022.herokuapp.com
+ADMIN: https://amcomtest2022.herokuapp.com/admin
 
 Usuário e Senha (admin)
 

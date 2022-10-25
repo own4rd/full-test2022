@@ -16,7 +16,7 @@ const Table = (props) => {
                     <td>{content.quantidade}</td>
                     <td>R$ {content.preco}</td>
                     <td>R$ {content.total}</td>
-                    <td onClick={() => props.removeItem(content.id)}><i className="fas fa-trash"></i></td>
+                    <td onClick={() => props.removeItem(content.item)}><i className="fas fa-trash"></i></td>
                 </tr>
                 ))}
             </tbody>

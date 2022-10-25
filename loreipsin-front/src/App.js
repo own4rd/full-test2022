@@ -82,7 +82,7 @@ function App() {
   
   const onRemoveProduto = (id_produto) => {
     let newSelectedProdutos = selectedProdutos.filter(function(produto) {
-      return produto.id !== id_produto
+      return produto.item !== id_produto
     })
     setSelectedProdutos(newSelectedProdutos)
   }

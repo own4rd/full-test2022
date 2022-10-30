@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { getVendedores } from "../services/Vendedor.service";
 
 const VendedorContext = createContext([]);
 
@@ -6,9 +7,8 @@ const VendedorProvider = ({children}) => {
 
     const [vendedores, setVendedores] = useState([])
     async function loadVendedores() {
-        await fetch(`http://localhost:8000/api/vendedores/`)
-        .then(response => response.json())
-        .then(data => setVendedores(data));
+        let vendedores = await getVendedores()
+        setVendedores(vendedores.data)
     }
 
     return (

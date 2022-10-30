@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { buscarProdutos } from "../services/Produto.service";
 
 const ProdutoContext = createContext([]);
 
@@ -6,10 +7,10 @@ const ProdutoProvider = ({children}) => {
 
     const [produtos, setProdutos] = useState([])
 
+    // Hook customizado
     async function updateProdutosSearch(buscaValue) {
-        await fetch(`http://localhost:8000/api/itens/?search=${buscaValue}`)
-        .then(response => response.json())
-        .then(data => setProdutos(data));
+        let produtos_search = await buscarProdutos(buscaValue);
+        setProdutos(produtos_search.data);
     }
 
     return (

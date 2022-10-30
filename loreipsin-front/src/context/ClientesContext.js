@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { getClientes } from "../services/Cliente.service";
 
 const ClienteContext = createContext([]);
 
@@ -6,9 +7,8 @@ const ClienteProvider = ({children}) => {
 
     const [clientes, setClientes] = useState([])
     async function loadClientes() {
-        await fetch(`http://localhost:8000/api/clientes/`)
-        .then(response => response.json())
-        .then(data => setClientes(data));
+        let clientes = await getClientes();
+        setClientes(clientes.data);
     }
 
     return (
